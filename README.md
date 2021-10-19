@@ -1,8 +1,8 @@
-# Git Commands
+# Git Cheatsheet
 
 ## Initialise Local Directory as Git Directory
 
-`git init`
+- Initialise present working directory: `git init`
 
 ## Add files
 
@@ -14,6 +14,8 @@
 - `git commit -m "commit message here"`
 
 ## Check Status
+
+- `git status`
 
 ## Remote
 
@@ -35,6 +37,24 @@
 
 ## Git Branching
 
+- Create branch: `git branch <branch-name>`
 - Switch branch: `Git checkout <branch-name>`
+- Create branch & checkout branch `git checkout -b <branch-name>`
 - Delete branch: `git branch -d <branch-name>`
 - Confirm delete if branch has unmerged commits: `git branch -D <branch-name>`
+-
+
+## Git Merge
+
+- Merge branches: `git merge <branch-name>`
+
+## Git Rebase
+
+- Rebase into this branch: `git rebase <branch-name>`
+
+## Detaching HEAD
+
+HEAD refers to the current branch you are viewing.
+When HEAD points to a commit that is not the last commit in a branch, that is a "detached HEAD"
+
+- Detach the HEAD at a certain commit: `git checkout <commit-hash>`
