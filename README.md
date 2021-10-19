@@ -12,7 +12,8 @@
 ## Commit files with a commit message:
 
 - `git commit -m "commit message here"`
--
+
+## Check Status
 
 ## Remote
 
