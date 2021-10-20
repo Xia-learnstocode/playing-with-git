@@ -57,6 +57,7 @@ Add merge message:
 
 - See local branches: `git branch`
 - See remote branches: `git branch -r.`
+- See all local & remote branches: `git branch -a`
 
 ## Git Merge
 
