@@ -43,7 +43,7 @@
 
 ## Branching
 
-## Git Branching
+### Git Branching
 
 - Create branch: `git branch <branch-name>`
 - Switch branch: `Git checkout <branch-name>`
@@ -57,18 +57,18 @@
 - See remote branches: `git branch -r.`
 - See all local & remote branches: `git branch -a`
 
-## Git Merge
+### Git Merge
 
 - Merge branches: `git merge <branch-name>`
 
-## Detaching HEAD
+### Detaching HEAD
 
 HEAD refers to the current branch you are viewing.
 When HEAD points to a commit that is not the last commit in a branch, that is a "detached HEAD"
 
 - Detach the HEAD at a certain commit: `git checkout <commit-hash>`
 
-## Git VIM Editor
+### Git VIM Editor
 
 Add merge message:
 
@@ -100,7 +100,7 @@ Branch forcing combined with relative refs allows you to quickly moved a branch 
 - Directly reassign a branch to a commit with the -f option: `git branch -f <branch-you-want-to-move> <commit-you-want-to-move-it-to>`
   e.g. Move (by force) the main branch to three parents behind HEAD: `git branch -f main HEAD~3`
 
-## Reversing Changes in Git
+### Reversing Changes in Git
 
 - For local branches: reverse changes by moving a branch reference backwards in time to an older commit: `git reset`
   This will move a branch backwards as if the commit had never been made in the first place.
