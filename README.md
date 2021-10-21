@@ -19,7 +19,8 @@
 
 ### Check Status
 
-- Check the status of the files in your git directory, whether they've been added, staged or commited: `git status`
+- Check the status of the files in your git directory (added, staged or commited): `git status`
+- Show a list of all comits made to a repository: `git log`
 
 ## Pushing & Pulling Files to GitHub
 
