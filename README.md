@@ -80,18 +80,19 @@ Add merge message:
 
 ## Relative Refs
 
-### Moving upwards one commit at a time: `^`
+### Moving Up By One Commit
 
-- `git <commit-name>^` allows you to move upwards to the first parent of the commit
-- `git <commit-name>^^` allows you to move upwards to the first **grandparent** of the commit
+- Moving upwards one commit at a time: `^`
+- Move upwards to the first parent of the commit: `git <commit-name>^`
+- Move upwards to the first **grandparent** of the commit: `git <commit-name>^^`
 - You can also use `<commit-hash>` instead of `<commit-name>`
 
-### Moving upwards a number of times: `~<num>`
+### Moving Up By Multiple Commits
 
-The tilde operator (optionally) takes in a trailing number that specifies the number of parents you would like to ascend.
+The tilde operator `~` (optionally) takes in a trailing number that specifies the number of parents you would like to ascend.
 This is a way to concisely refer to a commit
 
-- `git <commit-name>~<num>
+- Moving upwards a number of times: `git <commit-name>~<num>`
 
 ### Branch Forcing
 
