@@ -149,8 +149,6 @@ e.g.
 `git commit --amend -m "an update commit message"`
 
 ![Initial History](https://wac-cdn.atlassian.com/dam/jcr:34fd0826-9e89-4ef1-bce8-b1325cf48306/01-02%20Changing%20the%20Last%20Commit.svg?cdnVersion=40)
-![Initial History](![Initial History](https://wac-cdn.atlassian.com/dam/jcr:34fd0826-9e89-4ef1-bce8-b1325cf48306/01-02%20Changing%20the%20Last%20Commit.svg?cdnVersion=40)
-)
 
 ## Setting Anchor Points
 
