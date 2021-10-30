@@ -20,7 +20,15 @@
 ### Check Status
 
 - Check the status of the files in your git directory (added, staged or commited): `git status`
-- Show a list of all comits made to a repository: `git log`
+
+### Git Log
+
+- Show a list of all comits made to a repository: `git log`, `git log --pretty=oneline`
+- View branches: `git log --pretty=oneline --graph`
+- Search commit messages: `git log --grep='pattern' --pretty=oneline`
+- Show file history: `git log --pretty=oneline -- <file-name>`
+- Show directory history: `git log --pretty=oneline --all -- <dir>`
+- Show last 5 commits: `git log --pretty=oneline -5`
 
 ## Pushing & Pulling Files to GitHub
 
@@ -57,6 +65,14 @@
 - See local branches: `git branch`
 - See remote branches: `git branch -r.`
 - See all local & remote branches: `git branch -a`
+
+### Diff
+
+- Show modifications not yet staged: `git diff`
+- Show modifications not yet commited: `git diff --staged`
+- Show all changes since last commi: `git diff HEAD`
+- Show all changes since a spwecific (tagged) commit: `git diff v1.0 -- <file-name>`
+- Show differecnes between 2 tagged commits: `git diff v1.0 v1.1 --stat`
 
 ### Git Merge
 
@@ -107,8 +123,28 @@ Branch forcing combined with relative refs allows you to quickly moved a branch 
 - For local branches: reverse changes by moving a branch reference backwards in time to an older commit: `git reset`
   This will move a branch backwards as if the commit had never been made in the first place.
   e.g. `git reset HEAD~1`
-- `for remote branches: reverse changes and share those reversed changes with others: `git revert`.
+- For remote branches: reverse changes and share those reversed changes with others: `git revert`
 - e.g.`git revert HEAD`
+- Unstage a file: `git reset HEAD <file-name>`
+- Create an alias for unstaging a file:
+
+```git
+git config --global alias.unstage 'reset HEAD'
+$ git unstage <file-name>
+```
+
+- Discard changes to a file: `git checkout -- <file>`
+- Rollback to a specific commit:
+  1. Make a note of the SHAR for the commit that you want to rollback to
+  2. Switch to the branch and reset the head to the required commit
+
+```git
+git log --pretty=oneline
+git branch mybranch
+$ git reset --hard <SHAR>
+```
+
+- Overwrite remote commit history with local history: `git push --force`
 
 ## Moving Work Around
 
