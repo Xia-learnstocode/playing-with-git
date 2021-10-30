@@ -130,7 +130,7 @@ Branch forcing combined with relative refs allows you to quickly moved a branch 
 
 ```git
 git config --global alias.unstage 'reset HEAD'
-$ git unstage <file-name>
+git unstage <file-name>
 ```
 
 - Discard changes to a file: `git checkout -- <file>`
@@ -140,8 +140,8 @@ $ git unstage <file-name>
 
 ```git
 git log --pretty=oneline
-git branch mybranch
-$ git reset --hard <SHAR>
+git branch <branch-name>
+git reset --hard <SHAR>
 ```
 
 - Overwrite remote commit history with local history: `git push --force`
@@ -208,7 +208,7 @@ If you leave the commit off, git will just use whatever HEAD is at.
 
 Describe where you are relative to the closest "anchor" (aka tag):
 
-```
+```git
 git describe <ref>
 ```
 
@@ -225,7 +225,7 @@ Where `tag` is the closest ancestor tag in history, `numCommits` is how many com
 
 Git describe can help you get your bearings after you've moved many commits backwards or forwards in history; this can happen after you've completed a git bisect (a debugging search) or when sitting down at a coworkers computer who just got back from vacation.
 
-# Resources
+## Resources
 
 1. [Learn Git Branching](https://learngitbranching.js.org)
 2. [Atlassian Git Tutorials](https://www.atlassian.com/git)
